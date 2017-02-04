@@ -1,0 +1,15 @@
+{
+    "input": "src/assets/css/*.css",
+    "output": "build/assets/css/main.css",
+    "use": [
+        "postcss-import",
+        "postcss-custom-media",
+        "postcss-custom-properties",
+        "postcss-nesting",
+        "autoprefixer",
+        "postcss-csso"
+    ],
+    "autoprefixer": {
+        "browsers": "last 2 versions"
+    }
+}

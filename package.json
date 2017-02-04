@@ -12,13 +12,15 @@
   "scripts": {
     "build": "npm run site && npm run assets",
     "site": "metalsmith",
-    "assets": "npm run images && npm run fonts",
+    "assets": "npm run css && npm run images && npm run fonts",
+    "css": "postcss --config postcss.json",
     "images": "npm run images.webp && npm run images.jpeg",
     "images.webp": "imagemin src/assets/img/* --plugin=webp --out-dir=build/assets/img/",
     "images.jpeg": "imagemin src/assets/img/*.jpg --plugin=mozjpeg --out-dir=build/assets/img/",
     "fonts": "sync-files src/assets/fonts/ build/assets/fonts/"
   },
   "dependencies": {
+    "autoprefixer": "^6.7.2",
     "handlebars": "^4.0.0",
     "imagemin": "^5.2.2",
     "imagemin-cli": "^3.0.0",
@@ -30,6 +32,13 @@
     "metalsmith-in-place": "^1.0.0",
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-markdown": "^0.2.1",
+    "postcss": "^5.2.11",
+    "postcss-cli": "^2.6.0",
+    "postcss-csso": "^1.1.2",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-import": "^9.1.0",
+    "postcss-nesting": "^2.3.1",
     "sync-files": "^1.0.3"
   }
 }
