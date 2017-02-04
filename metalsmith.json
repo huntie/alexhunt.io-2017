@@ -1,0 +1,23 @@
+{
+    "source": "src/pages/",
+    "destination": "build/",
+    "plugins": {
+        "metalsmith-data": {
+            "site": "src/data/site.yml",
+            "links": "src/data/links.yml"
+        },
+        "metalsmith-markdown": true,
+        "metalsmith-layouts": {
+            "engine": "handlebars",
+            "directory": "src/layouts/",
+            "partials": "src/partials/",
+            "rename": true
+        },
+        "metalsmith-in-place": {
+            "engine": "handlebars"
+        },
+        "metalsmith-html-minifier": {
+            "removeAttributeQuotes": false
+        }
+    }
+}

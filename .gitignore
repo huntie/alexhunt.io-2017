@@ -1,0 +1,8 @@
+# Editor files
+*.sublime-*
+
+# Build output
+/build
+
+# Dependencies
+/node_modules

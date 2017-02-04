@@ -1,0 +1,24 @@
+{
+  "name": "alexhunt.io",
+  "version": "1.0.0",
+  "author": "Alex Hunt <hello@alexhunt.io>",
+  "description": "Personal website",
+  "homepage": "https://alexhunt.io",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huntie/alexhunt.io"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/metalsmith"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-data": "^0.1.2",
+    "metalsmith-html-minifier": "^2.2.0",
+    "metalsmith-in-place": "^1.0.0",
+    "metalsmith-layouts": "^1.8.0",
+    "metalsmith-markdown": "^0.2.1"
+  }
+}
