@@ -1,0 +1,10 @@
+.profile-img {
+    display: inline-block;
+    margin-top: -.05em;
+    margin-right: .5em;
+    border-radius: .5em;
+
+    background: #eee;
+    font-size: 2em;
+    vertical-align: middle;
+}

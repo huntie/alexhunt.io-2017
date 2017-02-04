@@ -1,0 +1,13 @@
+.container {
+    padding: 0 40px;
+    width: 100%;
+    max-width: 480px;
+
+    @media (--screen-md) {
+        max-width: 640px;
+    }
+
+    @media (--screen-lg) {
+        max-width: 780px;
+    }
+}

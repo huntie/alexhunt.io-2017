@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('../fonts/motiva-sans-regular.woff2') format('woff2'),
+        url('../fonts/motiva-sans-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
