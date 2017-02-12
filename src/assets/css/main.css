@@ -14,11 +14,10 @@
 
 /* Layout */
 
-@import 'layout/center-content.css';
 @import 'layout/container.css';
+@import 'layout/section.css';
 
 /* Modules */
 
 @import 'modules/icon.css';
 @import 'modules/profile-img.css';
-@import 'modules/section.css';
