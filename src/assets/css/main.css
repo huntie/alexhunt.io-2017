@@ -19,6 +19,7 @@
 
 /* Modules */
 
+@import 'modules/footer.css';
 @import 'modules/header.css';
 @import 'modules/heading.css';
 @import 'modules/icon.css';
