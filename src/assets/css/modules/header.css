@@ -1,0 +1,29 @@
+.header {
+    margin-top: 0;
+    padding-top: 60px;
+    font-size: 1.25em;
+
+    @media (--screen-md) {
+        padding-top: 100px;
+    }
+}
+
+.header-profile-img {
+    display: inline-block;
+    margin-top: -.05em;
+    margin-right: .5em;
+    border-radius: .5em;
+
+    background: #eee;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.header-title {
+    display: inline-block;
+    margin: 0;
+
+    font-size: 1em;
+    color: #444;
+    vertical-align: middle;
+}
