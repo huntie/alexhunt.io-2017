@@ -1,3 +1,4 @@
 @custom-media --screen-sm (min-width: 360px);
 @custom-media --screen-md (min-width: 720px);
 @custom-media --screen-lg (min-width: 980px);
+@custom-media --screen-xl (min-width: 1480px);
