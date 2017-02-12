@@ -14,9 +14,10 @@
     "site": "metalsmith",
     "assets": "npm run css && npm run images && npm run fonts",
     "css": "postcss --config postcss.json",
-    "images": "npm run images.webp && npm run images.jpeg",
+    "images": "npm run images.webp && npm run images.jpeg && npm run images.svg",
     "images.webp": "imagemin src/assets/img/* --plugin=webp --out-dir=build/assets/img/",
     "images.jpeg": "imagemin src/assets/img/*.jpg --plugin=mozjpeg --out-dir=build/assets/img/",
+    "images.svg": "svgo -f src/assets/img/ -o build/assets/img/",
     "fonts": "sync-files src/assets/fonts/ build/assets/fonts/"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "postcss-custom-properties": "^5.0.2",
     "postcss-import": "^9.1.0",
     "postcss-nesting": "^2.3.1",
+    "svgo": "^0.7.2",
     "sync-files": "^1.0.3"
   }
 }
