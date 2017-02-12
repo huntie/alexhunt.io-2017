@@ -4,7 +4,7 @@ p {
 
     line-height: 1.6;
     font-size: .875em;
-    color: #b3b3b3;
+    color: var(--colour-text-secondary);
 }
 
 small {

@@ -5,7 +5,7 @@
 .heading-primary {
     margin-bottom: 1.5em;
     font-size: 1.125em;
-    color: #444;
+    color: var(--colour-text-primary);
 }
 
 .heading-secondary {

@@ -4,6 +4,6 @@
     & > .ext-link-nav-item:not(:last-child):after {
         margin: 0 .5em;
         content: '|';
-        color: #d8d8d8;
+        color: var(--colour-grey-light);
     }
 }

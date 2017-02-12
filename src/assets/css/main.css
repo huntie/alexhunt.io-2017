@@ -1,6 +1,7 @@
 /* Settings */
 
 @import 'settings/breakpoints.css';
+@import 'settings/colours.css';
 @import 'settings/container.css';
 
 /* Base */

@@ -24,6 +24,6 @@
     margin: 0;
 
     font-size: 1em;
-    color: #444;
+    color: var(--colour-text-primary);
     vertical-align: middle;
 }
