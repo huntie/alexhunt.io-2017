@@ -3,6 +3,7 @@
 @import 'settings/breakpoints.css';
 @import 'settings/colours.css';
 @import 'settings/container.css';
+@import 'settings/grid.css';
 
 /* Base */
 
@@ -16,6 +17,7 @@
 /* Layout */
 
 @import 'layout/container.css';
+@import 'layout/grid.css';
 @import 'layout/section.css';
 
 /* Modules */
