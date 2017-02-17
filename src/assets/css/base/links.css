@@ -1,10 +1,10 @@
 a {
     border-bottom: .1em solid transparent;
     text-decoration: none;
-    color: #39a6de;
+    color: var(--colour-link-primary);
     transition: border-color .2s;
 }
 
 a:hover {
-    border-bottom: .1em solid #eee;
+    border-color: var(--colour-grey-light);
 }

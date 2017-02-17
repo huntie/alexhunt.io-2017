@@ -1,0 +1,23 @@
+.card {
+    position: relative;
+    padding: 1.5em 0;
+    border-top: 1px solid var(--colour-grey-extralight);
+
+    & > p {
+        margin-bottom: 0;
+    }
+
+    &:hover h1 {
+        color: var(--colour-link-primary);
+    }
+}
+
+.card-heading {
+    line-height: 1.4;
+    transition: color .2s;
+}
+
+.card-metadata {
+    margin-top: 1.3em;
+    font-size: .75em;
+}

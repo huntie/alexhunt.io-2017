@@ -1,13 +1,22 @@
 .container {
-    padding: 0 40px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
     width: 100%;
-    max-width: 480px;
+
+    @media (--screen-sm) {
+        padding: 0 var(--container-padding-sm);
+        max-width: var(--container-width-sm);
+    }
 
     @media (--screen-md) {
-        max-width: 640px;
+        max-width: var(--container-width-md);
     }
 
     @media (--screen-lg) {
-        max-width: 780px;
+        max-width: var(--container-width-lg);
+    }
+
+    @media (--screen-xl) {
+        max-width: var(--container-width-xl);
     }
 }

@@ -1,0 +1,9 @@
+:root {
+    --container-padding: 30px;
+    --container-padding-sm: 40px;
+
+    --container-width-sm: 560px;
+    --container-width-md: 640px;
+    --container-width-lg: 880px;
+    --container-width-xl: 1280px;
+}

@@ -1,6 +1,7 @@
 {
     "source": "src/pages/",
     "destination": "build/",
+    "clean": false,
     "plugins": {
         "metalsmith-data": {
             "site": "src/data/site.yml",

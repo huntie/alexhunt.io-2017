@@ -1,0 +1,9 @@
+.lead-paragraph {
+    font-size: 1em;
+    line-height: 2;
+    color: #b3b3b3;
+
+    @media (--screen-md) {
+        font-size: 1.125em;
+    }
+}

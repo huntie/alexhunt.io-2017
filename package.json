@@ -14,10 +14,12 @@
     "site": "metalsmith",
     "assets": "npm run css && npm run images && npm run fonts",
     "css": "postcss --config postcss.json",
-    "images": "npm run images.webp && npm run images.jpeg",
+    "images": "npm run images.webp && npm run images.jpeg && npm run images.svg",
     "images.webp": "imagemin src/assets/img/* --plugin=webp --out-dir=build/assets/img/",
     "images.jpeg": "imagemin src/assets/img/*.jpg --plugin=mozjpeg --out-dir=build/assets/img/",
-    "fonts": "sync-files src/assets/fonts/ build/assets/fonts/"
+    "images.svg": "svgo -f src/assets/img/ -o build/assets/img/",
+    "fonts": "sync-files src/assets/fonts/ build/assets/fonts/",
+    "watch": "onchange src/** '!src/assets/**' -- npm run site & onchange src/assets/css/** -- npm run css"
   },
   "dependencies": {
     "autoprefixer": "^6.7.2",
@@ -33,12 +35,20 @@
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-markdown": "^0.2.1",
     "postcss": "^5.2.11",
+    "postcss-at-rules-variables": "^0.0.27",
+    "postcss-calc": "^5.3.1",
     "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",
+    "postcss-each": "^0.9.3",
+    "postcss-for": "^2.1.1",
     "postcss-import": "^9.1.0",
     "postcss-nesting": "^2.3.1",
+    "svgo": "^0.7.2",
     "sync-files": "^1.0.3"
+  },
+  "devDependencies": {
+    "onchange": "^3.2.1"
   }
 }

@@ -3,12 +3,63 @@ layout: default.hbs
 title: Alex Hunt – Web developer, student & occassional writer
 ---
 
-<h1>
-    <picture>
-        <source srcset="/assets/img/profile-small.webp" type="image/webp">
-        <img class="icon profile-img" src="/assets/img/profile-small.jpg" alt="Profile image">
-    </picture>
-    <span>Alex Hunt</span>
-</h1>
+<div class="grid section">
+    <div class="grid-col grid-col-xl-4">
+        <article class="bio">
+            <p class="lead-paragraph">London-based web developer. Currently building cool stuff at <a href="https://digital-detox.co.uk">Digital Detox</a>. Avid climber and snowboarder. Follow me on <a href="{{data.links.twitter}}">Twitter</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
+        </article>
+    </div>
+</div>
 
-<p>London-based web developer. Currently building cool stuff in Laravel at <a href="https://digital-detox.co.uk">Digital Detox</a>. I love web technologies, climbing and snowboarding. Follow me on <a href="{{data.links.twitter}}">Twitter</a>, see what I write on <a href="{{data.links.medium}}">Medium</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
+<div class="grid">
+    <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
+        <div class="card-listing-items">
+            <article class="card">
+                <h1 class="heading heading-primary card-heading">The ultra-minimalist static site stack</h1>
+                <p>This year I aim to build out my personal website — right now a simple landing page replacing&hellip;</p>
+                <p class="card-metadata"><time datetime="2017-02-09T09:19">9 Feb 2017</time></p>
+                <a class="block-link" href="https://medium.com/@huntie/the-ultra-minimalist-static-site-stack-31458ac4f48d"></a>
+            </article>
+            <article class="card">
+                <h1 class="heading heading-primary card-heading">Representing a UUID as a Base62 Hash ID for short, pretty URLs</h1>
+                <p>UUIDs are awesome — they provide a non-sequential, comprehensively unique identifier that can&hellip;</p>
+                <p class="card-metadata"><time datetime="2017-01-06T20:04">6 Jan 2017</time></p>
+                <a class="block-link" href="https://medium.com/@huntie/representing-a-uuid-as-a-base-62-hash-id-for-short-pretty-urls-c30e66bf35f9"></a>
+            </article>
+        </div>
+        <footer class="card-listing-footer">
+            <a class="card-listing-source-link" href="{{data.links.medium}}">
+                <img class="icon icon-inline card-listing-source-icon" src="/assets/img/icon-medium.svg">
+                <span class="card-listing-source-label">View all articles on Medium</span>
+            </a>
+        </footer>
+    </section>
+
+    <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
+        <div class="card-listing-items">
+            <article class="card">
+                <h1 class="heading heading-primary card-heading">laravel-simple-jsonapi</h1>
+                <p>Simpler JSON API support for Laravel</p>
+                <a class="block-link" href="https://github.com/huntie/laravel-simple-jsonapi"></a>
+            </article>
+            <article class="card">
+                <h1 class="heading heading-primary card-heading">super-awesome-paste</h1>
+                <p>Intelligent paste handling for Sublime</p>
+                <a class="block-link" href="https://github.com/huntie/super-awesome-paste"></a>
+            </article>
+            <article class="card">
+                <h1 class="heading heading-primary card-heading">minecraft-status-notifier</h1>
+                <p>Simple status notifier utility for Minecraft server on Supervisord</p>
+                <a class="block-link" href="https://github.com/huntie/minecraft-status-notifier"></a>
+            </article>
+        </div>
+        <footer class="card-listing-footer">
+            <a class="card-listing-source-link" href="{{data.links.github}}">
+                <img class="icon icon-inline card-listing-source-icon" src="/assets/img/icon-github.svg">
+                <span class="card-listing-source-label">View all projects on GitHub</span>
+            </a>
+        </footer>
+    </section>
+</div>
+
+{{> external-links}}
