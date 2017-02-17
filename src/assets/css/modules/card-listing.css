@@ -6,6 +6,7 @@
 
 .card-listing-footer {
     padding-top: 1.4em;
+    padding-bottom: 1.4em;
     border-top: 1px solid var(--colour-grey-extralight);
 }
 

@@ -1,7 +1,7 @@
 body {
     background: #fff;
     font-family: 'Motiva Sans';
-    font-size: .8rem;
+    font-size: .9rem;
 
     @media (--screen-sm) {
         font-size: 1rem;

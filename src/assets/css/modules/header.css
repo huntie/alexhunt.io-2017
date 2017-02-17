@@ -3,6 +3,10 @@
     padding-top: 60px;
     font-size: 1.25em;
 
+    @media (--screen-sm) {
+        padding-top: 80px;
+    }
+
     @media (--screen-md) {
         padding-top: 100px;
     }
