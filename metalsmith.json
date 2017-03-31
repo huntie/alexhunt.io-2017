@@ -5,7 +5,8 @@
     "plugins": {
         "metalsmith-data": {
             "site": "src/data/site.yml",
-            "links": "src/data/links.yml"
+            "links": "src/data/links.yml",
+            "projects": "src/data/projects.yml"
         },
         "metalsmith-markdown": true,
         "metalsmith-layouts": {

@@ -37,21 +37,13 @@ title: Alex Hunt – Web developer, student & occassional writer
 
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">laravel-simple-jsonapi</h1>
-                <p>Simpler JSON API support for Laravel</p>
-                <a class="block-link" href="https://github.com/huntie/laravel-simple-jsonapi"></a>
-            </article>
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">super-awesome-paste</h1>
-                <p>Intelligent paste handling for Sublime</p>
-                <a class="block-link" href="https://github.com/huntie/super-awesome-paste"></a>
-            </article>
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">minecraft-status-notifier</h1>
-                <p>Simple status notifier utility for Minecraft server on Supervisord</p>
-                <a class="block-link" href="https://github.com/huntie/minecraft-status-notifier"></a>
-            </article>
+            {{#each data.projects}}
+                <article class="card">
+                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
+                    <p>{{description}}</p>
+                    <a class="block-link" href="{{url}}"></a>
+                </article>
+            {{/each}}
         </div>
         <footer class="card-listing-footer">
             <a class="card-listing-source-link" href="{{data.links.github}}">
