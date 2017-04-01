@@ -12,6 +12,9 @@
             "username": "huntie"
         },
         "metalsmith-markdown": true,
+        "metalsmith-register-helpers": {
+            "directory": "src/helpers/"
+        },
         "metalsmith-layouts": {
             "engine": "handlebars",
             "directory": "src/layouts/",

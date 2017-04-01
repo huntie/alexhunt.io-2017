@@ -35,6 +35,7 @@
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-medium-data": "^1.0.0",
+    "metalsmith-register-helpers": "^0.3.0",
     "postcss": "^5.2.11",
     "postcss-at-rules-variables": "^0.0.27",
     "postcss-calc": "^5.3.1",
