@@ -24,6 +24,7 @@
   "dependencies": {
     "autoprefixer": "^6.7.2",
     "handlebars": "^4.0.0",
+    "helper-date": "^0.2.3",
     "imagemin": "^5.2.2",
     "imagemin-cli": "^3.0.0",
     "imagemin-mozjpeg": "^6.0.0",
