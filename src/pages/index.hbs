@@ -15,11 +15,11 @@ title: Alex Hunt – Web developer, student & occassional writer
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
             {{#each (take medium.posts 2)}}
-                <article class="card">
-                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
-                    <p>{{excerpt content.subtitle}}</p>
-                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
-                    <a class="block-link" href="{{url}}"></a>
+                <article class="card" itemscope itemtype="http://schema.org/Article">
+                    <h1 class="heading heading-primary card-heading" itemprop="headline">{{title}}</h1>
+                    <p itemprop="description">{{excerpt content.subtitle}}</p>
+                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}" itemprop="datePublished">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
+                    <a class="block-link" href="{{url}}" itemprop="url"></a>
                 </article>
             {{/each}}
         </div>
@@ -34,10 +34,10 @@ title: Alex Hunt – Web developer, student & occassional writer
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
             {{#each data.projects}}
-                <article class="card">
-                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
-                    <p>{{description}}</p>
-                    <a class="block-link" href="{{url}}"></a>
+                <article class="card" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+                    <h1 class="heading heading-primary card-heading" itemprop="name">{{title}}</h1>
+                    <p itemprop="description">{{description}}</p>
+                    <a class="block-link" href="{{url}}" itemprop="codeRepository"></a>
                 </article>
             {{/each}}
         </div>
