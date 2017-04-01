@@ -14,18 +14,14 @@ title: Alex Hunt – Web developer, student & occassional writer
 <div class="grid">
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">The ultra-minimalist static site stack</h1>
-                <p>This year I aim to build out my personal website — right now a simple landing page replacing&hellip;</p>
-                <p class="card-metadata"><time datetime="2017-02-09T09:19">9 Feb 2017</time></p>
-                <a class="block-link" href="https://medium.com/@huntie/the-ultra-minimalist-static-site-stack-31458ac4f48d"></a>
-            </article>
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">Representing a UUID as a Base62 Hash ID for short, pretty URLs</h1>
-                <p>UUIDs are awesome — they provide a non-sequential, comprehensively unique identifier that can&hellip;</p>
-                <p class="card-metadata"><time datetime="2017-01-06T20:04">6 Jan 2017</time></p>
-                <a class="block-link" href="https://medium.com/@huntie/representing-a-uuid-as-a-base-62-hash-id-for-short-pretty-urls-c30e66bf35f9"></a>
-            </article>
+            {{#each (take medium.posts 2)}}
+                <article class="card">
+                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
+                    <p>{{excerpt content.subtitle}}</p>
+                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
+                    <a class="block-link" href="{{url}}"></a>
+                </article>
+            {{/each}}
         </div>
         <footer class="card-listing-footer">
             <a class="card-listing-source-link" href="{{data.links.medium}}">
@@ -37,21 +33,13 @@ title: Alex Hunt – Web developer, student & occassional writer
 
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">laravel-simple-jsonapi</h1>
-                <p>Simpler JSON API support for Laravel</p>
-                <a class="block-link" href="https://github.com/huntie/laravel-simple-jsonapi"></a>
-            </article>
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">super-awesome-paste</h1>
-                <p>Intelligent paste handling for Sublime</p>
-                <a class="block-link" href="https://github.com/huntie/super-awesome-paste"></a>
-            </article>
-            <article class="card">
-                <h1 class="heading heading-primary card-heading">minecraft-status-notifier</h1>
-                <p>Simple status notifier utility for Minecraft server on Supervisord</p>
-                <a class="block-link" href="https://github.com/huntie/minecraft-status-notifier"></a>
-            </article>
+            {{#each data.projects}}
+                <article class="card">
+                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
+                    <p>{{description}}</p>
+                    <a class="block-link" href="{{url}}"></a>
+                </article>
+            {{/each}}
         </div>
         <footer class="card-listing-footer">
             <a class="card-listing-source-link" href="{{data.links.github}}">
