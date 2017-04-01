@@ -1,0 +1,15 @@
+.heading {
+    margin-top: 0;
+}
+
+.heading-primary {
+    margin-bottom: .9em;
+    font-size: 1.125em;
+    color: var(--colour-text-primary);
+}
+
+.heading-secondary {
+    margin-bottom: .5em;
+    font-size: .875em;
+    color: #b3b3b3;
+}

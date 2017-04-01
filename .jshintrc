@@ -1,0 +1,8 @@
+{
+    "node": true,
+    "esversion": 6,
+    "curly": true,
+    "eqeqeq": true,
+    "maxlen": 120,
+    "quotmark": "single"
+}

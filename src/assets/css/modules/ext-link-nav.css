@@ -1,0 +1,9 @@
+.ext-link-nav {
+    font-size: .875em;
+}
+
+.ext-link-nav-item:not(:last-child):after {
+    margin: 0 .5em;
+    content: '|';
+    color: var(--colour-grey-light);
+}

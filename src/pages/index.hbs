@@ -3,12 +3,51 @@ layout: default.hbs
 title: Alex Hunt – Web developer, student & occassional writer
 ---
 
-<h1>
-    <picture>
-        <source srcset="/assets/img/profile-small.webp" type="image/webp">
-        <img class="icon profile-img" src="/assets/img/profile-small.jpg" alt="Profile image">
-    </picture>
-    <span>Alex Hunt</span>
-</h1>
+<div class="grid section">
+    <div class="grid-col grid-col-xl-4">
+        <article class="bio">
+            <p class="lead-paragraph">London-based web developer. Currently building cool stuff at <a href="https://digital-detox.co.uk">Digital Detox</a>. Avid climber and snowboarder. Follow me on <a href="{{data.links.twitter}}">Twitter</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
+        </article>
+    </div>
+</div>
 
-<p>London-based web developer. Currently building cool stuff in Laravel at <a href="https://digital-detox.co.uk">Digital Detox</a>. I love web technologies, climbing and snowboarding. Follow me on <a href="{{data.links.twitter}}">Twitter</a>, see what I write on <a href="{{data.links.medium}}">Medium</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
+<div class="grid">
+    <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
+        <div class="card-listing-items">
+            {{#each (take medium.posts 2)}}
+                <article class="card">
+                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
+                    <p>{{excerpt content.subtitle}}</p>
+                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
+                    <a class="block-link" href="{{url}}"></a>
+                </article>
+            {{/each}}
+        </div>
+        <footer class="card-listing-footer">
+            <a class="card-listing-source-link" href="{{data.links.medium}}">
+                <img class="icon icon-inline card-listing-source-icon" src="/assets/img/icon-medium.svg">
+                <span class="card-listing-source-label">View all articles on Medium</span>
+            </a>
+        </footer>
+    </section>
+
+    <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
+        <div class="card-listing-items">
+            {{#each data.projects}}
+                <article class="card">
+                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
+                    <p>{{description}}</p>
+                    <a class="block-link" href="{{url}}"></a>
+                </article>
+            {{/each}}
+        </div>
+        <footer class="card-listing-footer">
+            <a class="card-listing-source-link" href="{{data.links.github}}">
+                <img class="icon icon-inline card-listing-source-icon" src="/assets/img/icon-github.svg">
+                <span class="card-listing-source-label">View all projects on GitHub</span>
+            </a>
+        </footer>
+    </section>
+</div>
+
+{{> external-links}}

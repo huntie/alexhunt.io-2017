@@ -1,0 +1,31 @@
+.card-listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-listing-footer {
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    border-top: 1px solid var(--colour-grey-extralight);
+}
+
+.card-listing-source-link {
+    border-bottom: 0;
+    font-size: .875em;
+    color: var(--colour-text-secondary);
+
+    &:hover {
+        color: var(--colour-link-primary);
+    }
+}
+
+.card-listing-source-icon {
+    margin-right: .6em;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+.card-listing-source-label {
+    vertical-align: middle;
+}

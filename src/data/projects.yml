@@ -1,0 +1,14 @@
+---
+# Featured GitHub repositories
+
+- title: laravel-simple-jsonapi
+  url: https://github.com/huntie/laravel-simple-jsonapi
+  description: Simpler JSON API support for Laravel
+
+- title: super-awesome-paste
+  url: https://github.com/huntie/super-awesome-paste
+  description: Intelligent paste handling for Sublime
+
+- title: minecraft-status-notifier
+  url: https://github.com/huntie/minecraft-status-notifier
+  description: Simple status notifier utility for Minecraft server on Supervisord

@@ -1,0 +1,9 @@
+.section {
+    padding-top: calc(var(--section-spacing) / 2);
+    padding-bottom: calc(var(--section-spacing) / 2);
+
+    @media (--screen-md) {
+        padding-top: calc(var(--section-spacing-md) / 2);
+        padding-bottom: calc(var(--section-spacing-md) / 2);
+    }
+}
