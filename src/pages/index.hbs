@@ -6,7 +6,7 @@ title: Alex Hunt – Web developer, student & occassional writer
 <div class="grid section">
     <div class="grid-col grid-col-xl-4">
         <article class="bio">
-            <p class="lead-paragraph">London-based web developer. Currently building cool stuff at <a href="https://digital-detox.co.uk">Digital Detox</a>. Avid climber and snowboarder. Follow me on <a href="{{data.links.twitter}}">Twitter</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
+            <p class="lead-paragraph" itemprop="description">London-based web developer. Currently building cool stuff at <a href="https://digital-detox.co.uk" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">Digital Detox</a>. Avid climber and snowboarder. Follow me on <a href="{{data.links.twitter}}">Twitter</a> or view my open source projects on&nbsp;<a href="{{data.links.github}}">GitHub</a>.</p>
         </article>
     </div>
 </div>
@@ -15,11 +15,11 @@ title: Alex Hunt – Web developer, student & occassional writer
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
             {{#each (take medium.posts 2)}}
-                <article class="card">
-                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
-                    <p>{{excerpt content.subtitle}}</p>
-                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
-                    <a class="block-link" href="{{url}}"></a>
+                <article class="card" itemscope itemtype="http://schema.org/Article">
+                    <h1 class="heading heading-primary card-heading" itemprop="headline">{{title}}</h1>
+                    <p itemprop="description">{{excerpt content.subtitle}}</p>
+                    <p class="card-metadata"><time datetime="{{date firstPublishedAt ""}}" itemprop="datePublished">{{date firstPublishedAt "D MMM YYYY"}}</time></p>
+                    <a class="block-link" href="{{url}}" itemprop="url"></a>
                 </article>
             {{/each}}
         </div>
@@ -34,10 +34,10 @@ title: Alex Hunt – Web developer, student & occassional writer
     <section class="section grid-col grid-col-lg-3 grid-col-xl-2 card-listing">
         <div class="card-listing-items">
             {{#each data.projects}}
-                <article class="card">
-                    <h1 class="heading heading-primary card-heading">{{title}}</h1>
-                    <p>{{description}}</p>
-                    <a class="block-link" href="{{url}}"></a>
+                <article class="card" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+                    <h1 class="heading heading-primary card-heading" itemprop="name">{{title}}</h1>
+                    <p itemprop="description">{{description}}</p>
+                    <a class="block-link" href="{{url}}" itemprop="codeRepository"></a>
                 </article>
             {{/each}}
         </div>
