@@ -8,6 +8,9 @@
             "links": "src/data/links.yml",
             "projects": "src/data/projects.yml"
         },
+        "metalsmith-medium-data": {
+            "username": "huntie"
+        },
         "metalsmith-markdown": true,
         "metalsmith-layouts": {
             "engine": "handlebars",
