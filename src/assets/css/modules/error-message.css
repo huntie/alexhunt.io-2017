@@ -1,0 +1,23 @@
+.error-message {
+    display: flex;
+    align-items: center;
+}
+
+.error-message-code {
+    width: 4em;
+    height: 4em;
+    background: var(--colour-grey-light);
+    color: white;
+    font-size: 1.5em;
+    line-height: 4em;
+    text-align: center;
+}
+
+.error-message-title {
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
+
+.error-message-detail {
+    margin-left: 40px;
+}
