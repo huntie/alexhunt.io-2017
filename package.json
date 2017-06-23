@@ -10,11 +10,11 @@
     "url": "https://github.com/huntie/alexhunt.io"
   },
   "scripts": {
-    "build": "npm run site && npm run assets",
+    "build": "run-s site assets",
     "site": "metalsmith",
-    "assets": "npm run css && npm run images && npm run fonts",
+    "assets": "run-p css images fonts",
     "css": "postcss --config postcss.json",
-    "images": "npm run images.webp && npm run images.jpeg && npm run images.svg",
+    "images": "run-p images.webp images.jpeg images.svg",
     "images.webp": "imagemin src/assets/img/* --plugin=webp --out-dir=build/assets/img/",
     "images.jpeg": "imagemin src/assets/img/*.jpg --plugin=mozjpeg --out-dir=build/assets/img/",
     "images.svg": "svgo -f src/assets/img/ -o build/assets/img/",
@@ -37,6 +37,7 @@
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-medium-data": "^1.0.0",
     "metalsmith-register-helpers": "^0.3.0",
+    "npm-run-all": "^4.0.2",
     "postcss": "^5.2.11",
     "postcss-at-rules-variables": "^0.0.27",
     "postcss-calc": "^5.3.1",
