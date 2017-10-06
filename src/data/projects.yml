@@ -9,6 +9,6 @@
   url: https://github.com/huntie/super-awesome-paste
   description: Intelligent paste handling for Sublime
 
-- title: minecraft-status-notifier
-  url: https://github.com/huntie/minecraft-status-notifier
-  description: Simple status notifier utility for Minecraft server on Supervisord
+- title: sublime-tmux
+  url: https://github.com/huntie/sublime-tmux
+  description: Open tmux windows at the current file or project folder in Sublime Text
