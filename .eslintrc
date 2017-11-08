@@ -1,0 +1,10 @@
+root: true
+env:
+    node: true
+    es6: true
+extends: ['eslint:recommended']
+rules:
+    curly: 1
+    eqeqeq: 1
+    quotes: [1, 'single']
+    semi: [2, 'always']
