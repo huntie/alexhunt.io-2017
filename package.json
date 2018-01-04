@@ -23,22 +23,22 @@
   },
   "dependencies": {
     "autoprefixer": "^6.7.2",
-    "handlebars": "^4.0.0",
+    "handlebars": "^4.0.11",
     "helper-date": "^0.2.3",
-    "imagemin": "^5.2.2",
+    "imagemin": "^5.3.1",
     "imagemin-cli": "^3.0.0",
     "imagemin-mozjpeg": "^6.0.0",
-    "imagemin-webp": "^4.0.0",
+    "imagemin-webp": "^4.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-data": "^0.1.2",
-    "metalsmith-html-minifier": "^2.2.0",
+    "metalsmith-html-minifier": "^2.4.5",
     "metalsmith-in-place": "^1.0.0",
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-medium-data": "^1.0.0",
     "metalsmith-register-helpers": "^0.3.0",
-    "npm-run-all": "^4.0.2",
-    "postcss": "^5.2.11",
+    "npm-run-all": "^4.1.2",
+    "postcss": "^5.2.18",
     "postcss-at-rules-variables": "^0.0.27",
     "postcss-calc": "^5.3.1",
     "postcss-cli": "^2.6.0",
@@ -53,6 +53,6 @@
     "sync-files": "^1.0.3"
   },
   "devDependencies": {
-    "onchange": "^3.2.1"
+    "onchange": "^3.3.0"
   }
 }
