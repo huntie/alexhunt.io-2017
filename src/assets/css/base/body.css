@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: 'Motiva Sans';
+    font-family: 'Motiva Sans', 'Noto Sans', -apple-system, sans-serif;
     font-size: .9rem;
 
     @media (--screen-sm) {
