@@ -5,9 +5,9 @@
   url: https://github.com/huntie/laravel-simple-jsonapi
   description: Simpler JSON API support for Laravel
 
-- title: super-awesome-paste
-  url: https://github.com/huntie/super-awesome-paste
-  description: Intelligent paste handling for Sublime
+- title: stringutils
+  url: https://github.com/huntie/stringutils
+  description: A functional string utility library for Python
 
 - title: sublime-tmux
   url: https://github.com/huntie/sublime-tmux
