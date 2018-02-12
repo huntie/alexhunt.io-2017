@@ -3,10 +3,10 @@
  *
  * @api public
  *
- * @param {String} str    The string to format
- * @param {Number} length The number of characters to limit to
+ * @param {string} str    The string to format
+ * @param {number} length The number of characters to limit to
  *
- * @return {String}
+ * @return {string}
  */
 module.exports = function (str, length) {
     return str.slice(0, length > 0 ? length : 100).replace(/\s\w+$/, '…');
