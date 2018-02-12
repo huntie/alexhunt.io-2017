@@ -4,9 +4,9 @@
  * @api public
  *
  * @param {Array}  array The array
- * @param {Number} limit The number of items to limit to
+ * @param {number} limit The number of items to limit to
  *
- * @return {String}
+ * @return {string}
  */
 module.exports = function (array, limit) {
     return array.slice(0, limit);

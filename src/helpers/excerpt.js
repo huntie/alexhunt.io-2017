@@ -3,11 +3,14 @@
  *
  * @api public
  *
- * @param {String} str    The string to format
- * @param {Number} length The number of characters to limit to
+ * @param {string} text                      The string to format
+ * @param {Object} options                   The helper option set
+ * @param {number} [options.hash.length=100] The character length to limit to
  *
- * @return {String}
+ * @return {string}
  */
-module.exports = function (str, length) {
-    return str.slice(0, length > 0 ? length : 100).replace(/\s\w+$/, '…');
+module.exports = function (text, { hash: { length = 100 }}) {
+    return text.length > length
+        ? text.slice(0, length).replace(/\s\w+$/, '…')
+        : text;
 };
