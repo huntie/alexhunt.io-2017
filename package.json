@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "autoprefixer": "^6.7.2",
-    "handlebars": "^4.3.0",
+    "handlebars": "^4.5.3",
     "helper-date": "^0.2.3",
     "imagemin": "^5.3.1",
     "imagemin-cli": "^3.0.0",
